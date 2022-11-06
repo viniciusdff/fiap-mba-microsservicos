@@ -1,5 +1,5 @@
 const express = require("express");
-const rotasUsuarios = require("./usuarios");
+const routeUsers = require("./usuarios");
 const login = require("./login");
 const routeFinancas = require("../../../financas/api/routes/financas");
 
@@ -7,7 +7,7 @@ module.exports = (app) => {
   app.use(express.urlencoded({ extended: true }));
   app.use(express.json());
 
-  app.use(rotasUsuarios);
+  app.use(routeUsers);
   app.use(login);
   app.use(routeFinancas);
 
