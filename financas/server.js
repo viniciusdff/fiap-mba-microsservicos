@@ -4,5 +4,5 @@ const server = app;
 const porta = 4020;
 
 server.listen(porta, () => {
-  console.log(`Server UP - porta ${porta}!`);
+  console.log(`Server UP - porta: ${porta}!`);
 });
